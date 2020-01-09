@@ -1,6 +1,10 @@
-html {
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
   max-width: 1024px;
-  margin: auto;
+  margin: 1em auto 1em auto;
 }
 
 header, footer {
@@ -11,12 +15,18 @@ header, footer {
   margin: auto;
   color: white;
   text-align: center;
+  padding: .125em;
 }
 
-header h1 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif', serif;  
+}
+
+h1 {
   color: white;
-  padding: 1em;
   text-align: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 #headerImage {
