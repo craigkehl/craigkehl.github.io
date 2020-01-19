@@ -71,6 +71,8 @@
 
   #contrast {
     grid-column: 2 / 3;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   #visualHierachy {
