@@ -18,7 +18,23 @@ header, footer, main {
   margin: 0 auto;
 }
 
-section.odd {
+#whiteSpace {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+#contrast {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+#visualHierachy {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
@@ -52,11 +68,11 @@ header h3 {
   margin-right: 10%;
 }
 
-section.odd h2 {
+.odd h2 {
   background-color: #a08204;
 }
 
-section.even h2 {
+.even h2 {
   background-color: #2d2c2a;
 }
 
@@ -95,8 +111,6 @@ p {
   min-width: 400px;
   height: auto;
   background-color: #2d2c2a;
-  -ms-transform: skewY(-10deg); /* IE 9 */
-  -webkit-transform: skewY(-10deg); /* Safari prior 9.0 */
   transform: skewY(-10deg); /* Standard syntax */
   z-index: -1;
 }
