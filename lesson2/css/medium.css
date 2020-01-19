@@ -6,12 +6,14 @@
   }
   #whiteSpace, #visualHierachy {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 80px 80px 260px 400px;
+    grid-template-rows: 120px 100px 80px 260px 360px;
   }
 
   #contrast {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 210px 80px 260px 400px;
+    grid-template-rows: 80px 230px 80px 300px 240px;
+    margin-top: -230px;
+    margin-bottom: -125px;
   }
 
   h1 {
@@ -83,6 +85,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     margin-bottom: .5em;
+    padding-top: 32px;
   }
   
   .even p {
