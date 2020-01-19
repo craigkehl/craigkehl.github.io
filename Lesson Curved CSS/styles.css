@@ -1,0 +1,23 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.curved {
+  background: #ff3c00;
+  color: white;
+  text-align: center;  
+}
+
+.curved h1 {
+  font-size: 6rem;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.curved p {
+  font-size: 1rem;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
