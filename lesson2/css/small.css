@@ -14,6 +14,10 @@ body {
   color: white;
 }
 
+main {
+  display: grid;
+}
+
 header, footer, main {
   margin: 0 auto;
 }
