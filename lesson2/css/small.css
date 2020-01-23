@@ -116,6 +116,11 @@ p {
   margin-left: 10%;
 }
 
+#lamboDriver {
+  font-weight: bolder;
+  font-style: italic;
+}
+
 header h1 #principles {
   display: inline-block;
   vertical-align: -60%;
