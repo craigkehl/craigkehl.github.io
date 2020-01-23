@@ -22,6 +22,7 @@
     height: 150px;
     z-index: -2;
     background-color: transparent;
+    text-shadow: 3px 3px black; 
   }
   
 .odd .trapShape {
@@ -61,7 +62,7 @@
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     width: auto;
-    max-width: 315px;
+    max-width: 54%;
     margin: auto;
   }
 
