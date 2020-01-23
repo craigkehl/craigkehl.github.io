@@ -50,6 +50,7 @@ h2 {
   width: 50%;
   margin: 1em auto;
   padding: .4em;
+  max-block-size: 42px;
 }
 
 header h3 {
