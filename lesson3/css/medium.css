@@ -15,4 +15,13 @@
   header, footer {
     border-radius: 10px;
   }
+
+  .colorDesc {
+    display: flex;
+  }
+  
+  .colorDesc li {
+    flex: 1;
+  }
+
 }

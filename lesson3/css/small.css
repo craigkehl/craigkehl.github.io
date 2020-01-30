@@ -35,7 +35,7 @@ header {
 nav {
   width: 95%;
   margin: auto;
-  radius: 10%;
+  border-radius: 10px;
 	background-color: #3c3c3b;
 	text-align: center;
   box-shadow: 0 2px 15px gray;
@@ -141,4 +141,71 @@ footer p {
 
 #lastMod {
   color: yellow;
+}
+
+.typography li:nth-child(1) {
+  font-family: 'Trade Winds', cursive;
+}
+
+.typography li:nth-child(2) {
+  font-family: 'Righteous', cursive;
+  color: #db3069;
+}
+
+#colorScheme {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#colorScheme svg {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: -1;
+  margin: auto;
+}
+.colorDesc {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 0 3% 0 4%;
+  margin: -300px;
+  box-sizing: border-box;
+  width: 95%;
+  height: 50vh;
+  margin: auto;
+  list-style: none;
+  justify-content: center;
+}
+
+.colorDesc li {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ebebd3;
+  margin: 2%;
+  font-size: 1.5em;
+  padding: 5% 0;
+  border: 3px solid black;
+}
+
+.colorDesc li:nth-child(1) {
+  background-color: #1446a0;
+  color: white;
+}
+
+.colorDesc li:nth-child(2) {
+  background-color: #db3069;
+  color: white;
+}
+
+.colorDesc li:nth-child(3) {
+  background-color: #f5d547;
+}
+
+.colorDesc li:nth-child(4) {
+  background-color: #ebebd3;
+}
+
+.colorDesc li:nth-child(5) {
+  background-color: #3c3c3b;
+  color: white;
 }
