@@ -1,6 +1,6 @@
 const hambutton = document.querySelector(".hamburger");
 
-var lastModification = new Date(document.lastModified);
+var lastModification = new Date();
 
 // initialize custom date arrays
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
