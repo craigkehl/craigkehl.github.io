@@ -1,0 +1,170 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Muli|Righteous|Trade+Winds&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+line-height: 1.1em;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  color: #3c3c3b;  
+  background-color: #ebebd3;
+}
+
+/********** Header area ***********/
+/*********************************/
+header, footer, main {
+  margin: 15px auto;
+  padding: 5px;
+  /* width: 95%; */
+}
+
+header, footer {
+  background-color: blue;
+  color: #ebebd3;
+}
+
+header {
+	margin-top: 10px;
+	margin-bottom: 0;
+	/* border-radius: 10px 10px 0 0; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__img {
+  width: 100px;
+  height: auto;
+
+}
+
+.header__subText {
+	color: #f5d547;
+	padding: 5px;
+}
+
+
+/******* Navigation area *******/
+/*********************************/
+nav {
+  /* width: 95%; */
+  margin: auto;
+  /* border-radius: 0 0 10px 10px; */
+	background-color: #3c3c3b;
+	text-align: center;
+  box-shadow: 0 2px 15px gray;
+  padding: .5em;
+}
+.navigation {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #ebebd3;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+nav ul li a.active {
+  color: #f5d547;
+}
+
+/******* Headline elements *******/
+/*********************************/
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 1px 1px 0px black;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Righteous', cursive;
+  color: #1446a0; 
+}
+
+h1 {  
+	font-family: 'Trade Winds', cursive;
+	margin: 0;
+}
+
+h2 {
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+	padding-bottom: .5em;
+
+}
+
+/* Main area  */
+
+.contentbox {
+  display: block;
+  margin: 0 auto;
+  border: 1px dashed #000;
+  padding: 15px;
+  background-color: #eee;
+  color: #444;
+  font-style: italic;
+}
+
+
+div.domain__img img {
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+footer {
+	/* border-radius: 10px; */
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  padding-bottom: .5rem;
+}
+
+
+#lastMod {
+  color: yellow;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+
