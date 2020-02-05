@@ -1,5 +1,5 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Muli|Righteous|Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli|Source+Serif+Pro|Trade+Winds&display=swap');
 
 * {
 margin: 0;
@@ -101,11 +101,11 @@ nav ul li a.active {
 /******* Headline elements *******/
 /*********************************/
 h1, h2, h3, h4, h5, h6 {
-	text-shadow: 1px 1px 0px black;
+	text-shadow: .5px .5px 0px black;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Source Serif Pro', serif;
   color: #1446a0; 
 }
 
