@@ -1,5 +1,5 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Muli|Righteous|Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli|Source+Serif+Pro|Trade+Winds&display=swap');
 
 * {
   margin: 0;
@@ -76,7 +76,7 @@ article {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Source Serif Pro', serif;
   color: #db3069; 
 }
 

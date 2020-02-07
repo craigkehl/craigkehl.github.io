@@ -18,5 +18,97 @@
   .navigation li:first-child {
     display: none;
   }
+  
+  h2 {
+    margin-top: 1em;
+  }
 
+  
+  #summary {
+    width: 30%;
+    max-width: 500px;
+  }
+
+  h3#fiveDayBanner, div.fiveDay #day1, #day2,
+  #day3, #day4, #day5  {
+    display: block;
+  }
+
+  .forecast {
+    display: block;
+    width: 90%;
+    max-width: 850px;
+    height: auto;
+    margin: 2em auto;
+    color: #ebebd3;
+  }
+
+  .forecast h3, .fiveDay {
+    text-align: center;
+  }
+
+  .forecast h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5em;
+    width: 100%;
+    margin: .5em auto;
+  }
+
+  .card {
+    background-color: #3c3c3b;
+    border: 4px solid black;
+    box-shadow: 1px 1px 3px #3c3c3b; 
+  }
+
+  .label {
+    background-color: #1446a0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }  
+
+  .fiveDay {
+    display: flex;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .card span {
+    display: block;
+    margin: auto;
+    padding: 10px;
+  }
+
+  
+  article.contentbox img {
+    width: 50%;
+    max-width: 450px;
+    float: right;
+    margin: .5em .5em 2em 2em;
+  }
+
+  div.author {    
+    margin-bottom: 2em;
+  }
+    
+  article h3, h5 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  div.contactUs {
+    display: flex;
+  }
+
+  div.map {
+    display: inline-block;
+    max-width: 800px;
+    margin: .5em .5em 2em 0;
+  }
 }
