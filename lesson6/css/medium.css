@@ -8,6 +8,14 @@ Roughly 600 px as break point
 
   }
 
+  .headings h1 {
+    font-size: 2em;
+  }
+  
+  .header__subText {
+    font-size: 1.2em;
+  }
+
   .navigation {
     display: flex;
   }

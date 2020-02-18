@@ -16,8 +16,12 @@
     border-radius: 10px;
   }
 
-  h1 {
+  .headings h1 {
     font-size: 3em;
+  }
+
+  .header__subText {
+    font-size: 1.5em;
   }
 
   #summary {
