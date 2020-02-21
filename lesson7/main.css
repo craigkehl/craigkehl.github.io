@@ -14,3 +14,13 @@ picture {
   text-align: center;
   margin-top: 32px;
 }
+
+picture img[data-src] {
+  filter: blur(1.5em)  brightness(25%);
+  
+}
+
+picture img {
+  transition: filter 0.85s;
+ 
+}
