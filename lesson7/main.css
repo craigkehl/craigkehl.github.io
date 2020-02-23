@@ -21,6 +21,5 @@ picture img[data-src] {
 }
 
 picture img {
-  transition: filter 0.85s;
- 
+  transition: filter 0.85s; 
 }
