@@ -291,8 +291,8 @@ div.gallery picture img {
   margin: auto;
 }
 
-.caption {
-  display: 
+span.caption {
+  display: none;
 }
 
 /****************************************/
