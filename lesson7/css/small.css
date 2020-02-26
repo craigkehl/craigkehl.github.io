@@ -72,13 +72,11 @@ header {
 /******* Navigation area *******/
 /*********************************/
 nav {
-  /* width: 95%; */
   margin: auto;
-  /* border-radius: 0 0 10px 10px; */
 	background-color: #3c3c3b;
 	text-align: center;
   box-shadow: 0 2px 15px gray;
-  padding: .5em;
+  /* padding: .5em; */
 }
 .navigation {
 	list-style-type: none;
