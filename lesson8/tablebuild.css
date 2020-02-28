@@ -40,7 +40,7 @@ tr:nth-child(even) {
   background-color: #e7ffed;
 }
 
-td.standout {
+span {
   font-style: italic;
 }
 
