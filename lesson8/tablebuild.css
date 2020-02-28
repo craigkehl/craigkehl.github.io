@@ -1,7 +1,12 @@
 
 /** Color Pallet #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 */
+html {
+  line-height: .9;
+}
+
 body, #salesReport {
   font-family: Ubuntu, sans-serif;
+  font-style: bold;
   text-align: center;
   padding: 10px;
 }
@@ -11,9 +16,10 @@ table#salesReport {
 }
 
 table, th, td {
- border: 1px solid #cccccc;
+ border: 1px inset #c5c5c5;
  border-collapse: collapse;
- padding: 10px;
+ padding: 8px 9px;
+ text-shadow: .5px .5px;
 }
 
 table#salesReport thead:first-child td {
@@ -41,19 +47,22 @@ table#salesReport tr:nth-child(odd) {
 }
 table#salesReport th {
   color: white;
+  letter-spacing: 1px;
   background-color: #628ca6;
+  font-size: 12px;
 }
 
 table#salesReport tfoot tr td {
-  font-size: .7em;
+  font-size: .65em;
   padding: 10px;
   background-color: #7fb9c2;
 }
 
-table#salesReport tbody:nth-child(4) tr:nth-child(2) {
+table#salesReport tbody :nth-child(4)  :nth-child(3) {
   background-color: #628ca6;
+  color: white;
 }
 
-tbody:nth-child(5) tr:first-child {
+tbody :nth-child(5) :first-child {
   font-style: italic;
 }
