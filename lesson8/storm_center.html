@@ -46,18 +46,16 @@
           <fieldset>
             <legend>Contributor's Credit</legend>
             <!-- Require the user's full name witha text input-->
-            <label class="above">Full Name* <input type="text" name="name" required id="frmName" autocomplete="name" pattern="[A-Za-z] {5,}"></label> 
-            <!-- Validate their input to have a minimum of five alpha numeric charaters using
-            a regular experssion pattern-->
-            
+            <label class="above">Full Name* <input type="text" name="name" required id="frmName" autocomplete="name" pattern="[A-Za-z]{2,}+' '+[A-Za-z]{3,}"></label> 
+                       
             <!-- Collect their email with an email input type and use a place holder as an example-->
             <label class="above">Email <input type="email" name="email" id="frmEmail"  placeholder="you@domain.com" autocomplete="email"></label>
             
             <!-- Require their phone number with an tel input type-->
-            <label class="above">Phone Number* <input type="tel" name="phone" required id="frmPhone" autocomplete="name"></label>
+            <label class="above">Phone Number* <input type="tel" name="phone" required id="frmPhone" autocomplete="name" pattern="[0-9]{10,}" title="Please enter a valid phone with its area code"></label>
 
             <!-- Require their zip code with input type number-->
-            <label class="above">Zip Code* <input type="number" name="zip" required id="frmZip" autocomplete="postal-code"></label>
+            <label class="above">Zip Code* <input type="number" name="zip" required id="frmZip" autocomplete="postal-code" pattern="[0-9]{5,9}" title="At minium enter the 5 digit postal code"></label>
           </fieldset>
         </div>
         <div class="card">
