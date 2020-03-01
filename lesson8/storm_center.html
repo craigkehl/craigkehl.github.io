@@ -67,19 +67,18 @@
 
             <!-- Get the type of storm with an input referencing a datalist of suggestions
                 They must include: Flash Flood, Hail, Hurricane, Thunderstorm and tornado-->
-            <label class="above">Kind of Storm <input list="types"></label>
-            <datalist id="types">
-                <option value="Flash Flood">
-                <option value="Hail">
-                <option value="Hurricane">
-                <option value="Thunderstorm">
-                <option value="Tournado">
-            </datalist>
+            <label class="above">Kind of Storm <input list="storm-types" id="storm-reported" name="storm-reported" >
+            <datalist id="storm-types">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tournado">
+            </datalist></label>
 
             <!-- Offer the user a range input from 1 to 10 to indicate the serverity of the storm (see the example-->
-            <label class="above" for="severity">Severity of Storm
-                <input type="range" id="severity" value="4" min="1" max="10" step="1" list="steps" oninput="severityAdjust(this.value)" onchange="severityAdjust(this.value)">
-                <span id="severityValue">4</span>
+            <label class="above" for="severity">Severity of Storm - <span id="severityValue">4</span>
+                <input class="range" type="range" name="severity" id="severity" value="4" min="1" max="10" step="1" list="steps" oninput="severityAdjust(this.value)" onchange="severityAdjust(this.value)">
             </label>
             
             <datalist id="steps">
@@ -113,12 +112,12 @@
             <label class="inline"><input type="radio" name="danger" id="dangerNo" value="no">No</label>
 
             <!-- Provide a text area for additional information-->
-            <label class="above" for="comments">Additional comments: </label>
-            <textarea class="stormReport" id="comments"></textarea>
+            <label class="above" for="comments">Additional comments: 
+              <textarea class="stormReport" name="comments" id="comments"></textarea>
+          </label>
           </fieldset>
-        </div>
-        <!-- Allow them to submit the form witha submission button and send them to a confirmation page offereing our gratefulness for their input-->
-        <input type="submit" value="Contribute Report"> 
+          <input class="subButton" type="submit" value="Contribute Report">
+        </div>         
       </form>
       
     </main>

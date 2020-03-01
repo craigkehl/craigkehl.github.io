@@ -55,5 +55,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  form div {
+    width: 90%;
+  }
+
+  p.stormReport {
+    max-width: 90%;
+  }
+
 
 }

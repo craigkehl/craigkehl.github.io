@@ -404,7 +404,8 @@ label.above {
 }
 
 label.inline {
-  padding: 8px;
+  padding: 8px 8px 20px 8px;
+  margin-bottom: 10px;
 }
 
 label.inline input {
@@ -422,4 +423,18 @@ form div {
   box-shadow: 1px 1px 3px #3c3c3b; 
   max-width: 450px;
   margin: 16px auto;
+}
+
+textarea.stormReport {
+  margin-top: 5px;
+}
+
+.subButton { 
+  width: 200px;
+  height: 50px;
+  margin: 10px 15px 20px 15px;
+}
+
+input.range {
+  display: inline;
 }
