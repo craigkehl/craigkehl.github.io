@@ -38,11 +38,11 @@
     <main>
       <h2>Report A Storm</h2>
       <!-- Tell the user the purpose-->
-      <p class="stormReport">Your contributions in providing information to fellow users is welcome and sometimes saves lives. If you are experiencing a storm in your local area, please give us as much of the information requested below as your can.  <br><br><span class="right">Thank you.</span></p>
+      <p class="stormReport">Your contributions in providing storm information is welcome and sometimes saves lives. If you are experiencing a storm in your local area, please give us as much of the information requested below as your can.  <br><br><span class="right">Thank you.</span></p>
      
       <!--Create a form to solicit current reports from users of local storms-->
       <form method="get" action="thanks.html">
-        <div class="card">
+        <div>
           <fieldset>
             <legend>Contributor's Credit</legend>
             <!-- Require the user's full name witha text input-->
@@ -58,16 +58,16 @@
             <label class="above">Zip Code* <input type="number" name="zip" required id="frmZip" autocomplete="postal-code" pattern="[0-9]{5,9}" title="At minium enter the 5 digit postal code"></label>
           </fieldset>
         </div>
-        <div class="card">
+        <div>
           <fieldset>
             <legend>Local Storm's Information</legend>
 
             <!-- Get the date of the storm with a date type input-->
-            <label class="above">When <input type="date" name="date" id="date"></label>
+            <label class="above">Date of Storm <input type="date" name="date" id="date"></label>
 
             <!-- Get the type of storm with an input referencing a datalist of suggestions
                 They must include: Flash Flood, Hail, Hurricane, Thunderstorm and tornado-->
-            <label class="above">What kind <input list="types"></label>
+            <label class="above">Kind of Storm <input list="types"></label>
             <datalist id="types">
                 <option value="Flash Flood">
                 <option value="Hail">
@@ -77,7 +77,7 @@
             </datalist>
 
             <!-- Offer the user a range input from 1 to 10 to indicate the serverity of the storm (see the example-->
-            <label class="above" for="severity">How bad 
+            <label class="above" for="severity">Severity of Storm
                 <input type="range" id="severity" value="4" min="1" max="10" step="1" list="steps" oninput="severityAdjust(this.value)" onchange="severityAdjust(this.value)">
                 <span id="severityValue">4</span>
             </label>
@@ -97,7 +97,7 @@
             
             
             <!-- Offer to record the region of the storm using a select input with drop-down options of "Preston", "Soda Springs", and "Fish Haven" with relevant value attributes. The first option should be "Select Region ..." as default but not selectable-->  
-            <label class="above">Where
+            <label class="above">Location of Storm
                 <select name="region" id="region">
                     <option value="none" selected disabled>Select Region ...</option>
                     <option value="preston">Preston</option>
@@ -107,14 +107,14 @@
             </label>
 
             <!-- Allow the user to report the level of the storm's danger to themselves using radio buttons with values of "yes," "maybe," and "no."-->
-            <div class="above">Are you currently in danger? </div>
-            <label><input type="radio" name="danger" id="dangerYes" value="yes">Yes</label>
-            <label><input type="radio" name="danger" id="dangerMaybe" value="maybe">Maybe</label>
-            <label><input type="radio" name="danger" id="dangerNo" value="no">No</label>
+            <label class="above">Are you currently in danger? </label>
+            <label class="inline"><input type="radio" name="danger" id="dangerYes" value="yes">Yes</label>
+            <label class="inline"><input type="radio" name="danger" id="dangerMaybe" value="maybe">Maybe</label>
+            <label class="inline"><input type="radio" name="danger" id="dangerNo" value="no">No</label>
 
             <!-- Provide a text area for additional information-->
             <label class="above" for="comments">Additional comments: </label>
-            <textarea id="comments" rows="4" cols="40"></textarea>
+            <textarea class="stormReport" id="comments"></textarea>
           </fieldset>
         </div>
         <!-- Allow them to submit the form witha submission button and send them to a confirmation page offereing our gratefulness for their input-->
