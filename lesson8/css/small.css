@@ -384,3 +384,7 @@ legend {
 .right {
   text-justify: right;
 }
+
+label {
+  color: #ebebd3;
+}
