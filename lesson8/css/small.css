@@ -385,6 +385,6 @@ legend {
   text-justify: right;
 }
 
-label {
+label, .above, legend {
   color: #ebebd3;
 }
