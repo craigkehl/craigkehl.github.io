@@ -1,0 +1,25 @@
+body {
+  width: 95%;
+  margin: auto;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+picture {
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+}
+
+picture img[data-src] {
+  filter: blur(1.5em)  brightness(25%);
+  
+}
+
+picture img {
+  transition: filter 0.85s; 
+}
