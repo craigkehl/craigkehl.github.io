@@ -134,7 +134,7 @@ h2 {
   padding: .5em;
   width: 90%;
   margin: 1em auto .5em auto;
-  box-shadow: 1px 1px 3px #3c3c3b;  
+  /* box-shadow: 1px 1px 3px #3c3c3b;   */
 }
 
 /* Main area  */
@@ -371,11 +371,16 @@ footer p {
 
 .stormReport {
   padding: 10px;
-  width: 95%;
+  width: 90%;
   max-width: 450px;
   margin: 20px auto;
 }
 
 legend {
   padding: 5px;
+  margin: 10px;
+}
+
+.right {
+  text-justify: right;
 }

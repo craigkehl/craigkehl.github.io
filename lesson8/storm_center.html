@@ -38,14 +38,15 @@
     <main>
       <h2>Report A Storm</h2>
       <!-- Tell the user the purpose-->
-      <p class="stormReport">Your contributions in providing information to fellow users is welcome and sometimes saves lives. If you are experiencing a storm in your local area, please give us as much of the information requested below as your can. <br>Thank you.</p>
+      <p class="stormReport">Your contributions in providing information to fellow users is welcome and sometimes saves lives. If you are experiencing a storm in your local area, please give us as much of the information requested below as your can.  <br><br><span class="right">Thank you.</span></p>
+     
       <!--Create a form to solicit current reports from users of local storms-->
       <form method="get" action="thanks.html">
         <div class="card">
           <fieldset>
             <legend>Contributor's Credit</legend>
             <!-- Require the user's full name witha text input-->
-            <label class="above">Full Name* <input type="text" name="name" required id="frmName" autocomplete="name"></label> 
+            <label class="above">Full Name* <input type="text" name="name" required id="frmName" autocomplete="name" pattern="[A-Za-z] {5,}"></label> 
             <!-- Validate their input to have a minimum of five alpha numeric charaters using
             a regular experssion pattern-->
             
