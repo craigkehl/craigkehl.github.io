@@ -1,0 +1,66 @@
+/** Color Pallet #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 */
+
+body {
+  font-family: Ubuntu, sans-serif;
+  font-style: bold;
+  text-align: center;
+  padding: 10px;
+  line-height: .9;
+}
+
+table {
+  box-shadow: 5px 5px 8px 1px #628ca6;
+}
+
+table, th, td {
+ border: 1px inset #c5c5c5;
+ border-collapse: collapse;
+ padding: 8px 9px;
+ text-shadow: .25px .25px;
+}
+
+table thead td {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #7fb9c2;
+}
+
+table thead td {
+  font-size: 1.em;
+  font-weight: normal;
+}
+
+table tbody {
+  font-size: .8em;
+  padding: 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #e7ffed;
+}
+
+span {
+  font-style: italic;
+}
+
+table tr {
+  background-color: #e7f0ed;
+}
+table th {
+  color: white;
+  letter-spacing: 1px;
+  background-color: #628ca6;
+  font-size: 12px;
+}
+
+table tfoot tr td {
+  font-size: .65em;
+  padding: 10px;
+  background-color: #7fb9c2;
+}
+
+.standout {
+  background-color: #628ca6;
+  color: white;
+}
