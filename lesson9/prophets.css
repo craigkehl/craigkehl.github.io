@@ -57,7 +57,7 @@ section {
   margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: 2fr 1fr 1fr 10fr;
+  grid-template-rows: 3fr 1fr 1fr auto;
 
 }
 
@@ -66,6 +66,7 @@ section p {
   font-size: 12px;
   max-width: 240px;
   width: 100%;
+  padding: 5px;
 }
 
 div.cards section img {
@@ -97,6 +98,14 @@ footer p {
     div.cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+      font-size: 38px;
+    }
+
+    h2 {
+      font-size: 24px;
     }
 
 }
