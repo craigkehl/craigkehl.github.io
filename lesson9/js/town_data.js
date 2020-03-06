@@ -1,5 +1,7 @@
+const town_list = ["Fish Haven", "Preston", "Soda Springs"];
+
 // source URL
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 
 fetch(requestURL)
@@ -7,9 +9,10 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    // console.table(jsonObject); // temporary chcking for cvalid response and data parsing    
-    const prophets = jsonObject['prophets'];
-    for (let i = 0; i < prophets.length; i++) {
+    console.table(jsonObject); // temporary chcking for valid response and data parsing    
+    const towns = jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++) {
+      if (towns[i].name == Fish)
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
       let bDate = document.createElement('p');
