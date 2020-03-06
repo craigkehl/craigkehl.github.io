@@ -1,6 +1,6 @@
+// source URL
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-// Load the array with the towns you wish to pull data about
-const tList = ['Fish Haven', 'Preston', 'Soda Springs'];
+
 
 fetch(requestURL)
   .then(function (response) {
@@ -8,9 +8,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];
-    towns.filter(town=>{
-      return tList.includes(town.name)
-    }).forEach(town => {
+    towns.forEach(town => {
       let card = document.createElement('section');
       let divH = document.createElement('div');
       let tName = document.createElement('h3');
@@ -23,6 +21,7 @@ fetch(requestURL)
       let tRainH = document.createElement('h5');
       let tRainData = document.createElement('p');
       let image = document.createElement('img');
+
       tName.textContent = town.name;
       tMotto.textContent = town.motto;
       tFoundH.textContent = "Founded";
