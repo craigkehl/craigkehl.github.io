@@ -184,5 +184,15 @@ Roughly 600 px as break point
     margin-left: 5px;
   }
 
+  div.townCards section div:nth-child(2) p {
+    text-align: left;
+    padding-left: 10px;
 
+  }
+
+  
+div.townCards section div h5 {
+  text-align: left;
+  padding-left: 10px;
+}
 }

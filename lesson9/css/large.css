@@ -94,9 +94,12 @@ div.townCards section img:first-of-type {
   align-self: end;
 }
 
-div.townCards h5 {
+div.townCards section div h5 {
   text-align: right;
 }
 
+div.townCards section div:nth-child(2) p {
+  text-align: right;
+}
 
 }
