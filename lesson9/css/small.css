@@ -129,7 +129,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 	text-align: center;
   padding: .5em;
   width: 90%;
@@ -268,7 +268,7 @@ div.social a {
 div.townCards section {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto auto;
+  grid-auto-rows: min-content;
   column-gap: 10px;
   padding: 10px;
   margin: 20px 5px;
