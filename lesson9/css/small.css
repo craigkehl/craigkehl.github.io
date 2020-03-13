@@ -261,7 +261,7 @@ div.social {
 }
 
 div.social a {
-  flex: 1 1 100;  
+  flex: 1 1 100%;  
   padding: 5px;
 }
 /*************** Home *********************/
