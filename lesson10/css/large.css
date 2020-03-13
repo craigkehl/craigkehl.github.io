@@ -50,12 +50,7 @@
     display: block;
   }
 
-  form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  form div {
+   form div {
     width: 90%;
   }
 
