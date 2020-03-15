@@ -28,11 +28,11 @@
       <ul class="navigation">
         <li><a class="hamburger">&#9776; Menu</a></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="preston-9.html" class="active">Preston</a></li>
+        <li><a href="preston-10.html" class="active">Preston</a></li>
         <li><a href="soda_springs.html">Soda Springs</a></li>
         <li><a href="fish_haven.html">Fish Haven</a></li>
         <li><a href="storm_center.html">Storm Center</a></li>
-        <li><a href="gallery-9.html">Gallery</a></li>
+        <li><a href="gallery-10.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
@@ -47,13 +47,13 @@
           <h2>Weather Summary</h2>
           <div class="table">
             <div class="header">Currently:</div>
-            <div class="data" id="currently">cloudy</div>
-            <div class="header">High:</div>
-            <div class="data" id="high">34</div>
+            <div class="data" id="currently"></div>
+            <div class="header">Temp:</div>
+            <div class="data"><span id="current-temp"></span>&deg; F</div>
             <div class="header">Wind Chill:</div>
             <div class="data" id="wChill"></div>
             <div class="header">Humidty:</div>
-            <div class="data" id="humidty">10%</div>
+            <div class="data" id="humidty"></div>
             <div class="header">Wind Speed:</div>
             <div class="data" id="wSpeed">7</div>
           </div>
@@ -137,11 +137,12 @@
     </p>      
   </footer>
 
+
+  <script src="js/weatherapi.js"></script>
   <script src="js/hamburger_menu.js"></script>
   <script src="js/display_today.js"></script>
   <script src="js/is_friday.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="js/windchill.js"></script>
   <!-- <script src="js/webFont.js"></script> -->
   </body>
 </html>
