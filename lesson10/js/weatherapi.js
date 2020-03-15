@@ -4,16 +4,17 @@ var wSpeed;
 var desc;
 var humidty;
 var imagesrc;
+var windChillDisp;
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    console.log(wSpeed);
     document.getElementById('current-temp').textContent = Math.round(((jsObject.main.temp - 273.15) * 9/5 + 32) * 100) / 100;
     wSpeed = jsObject.wind.speed;
-    humidty = jsObject.main.humidty;
-    
+    humidty = jsObject.main.humidity;
+    console.log(wSpeed);
+    console.log(humidty);
     imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
     desc = jsObject.weather[0].description;
     document.getElementById('imagesrc').textContent = imagesrc; // display image source in paragraph
@@ -21,9 +22,9 @@ fetch(apiURL)
     document.getElementById('icon').setAttribute('alt', desc);
     document.getElementById("humidty").textContent = humidty;
     document.getElementById('currently').textContent = desc;
-    // Windchill
     
-    const windChillDisp = document.getElementById("wChill");
+    windChillDisp = document.getElementById("wChill");
+
     // const cTmp = parseFloat(document.getElementById("current-temp").textContent);
     cTmp = Math.round(((jsObject.main.temp - 273.15) * 9/5 + 32) * 100) / 100;
 
