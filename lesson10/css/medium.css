@@ -138,9 +138,9 @@ Roughly 600 px as break point
     margin: .5em .5em 2em 0;
   }
 
-  div.map img {
-    width: 100%;
-    height: auto;
+  div.map iframe {
+    width: 40vw;
+    height: 250px;
   }
 
   div.gallery {

@@ -199,6 +199,7 @@ div.contentbox picture img {
   color: #f5d547;
   font-size: 70%;
   height: auto;
+  padding: 2px 5px 2px 0;
 }
 
 h3#fiveDayBanner, div.fiveDay #day1, #day2,
