@@ -1,5 +1,6 @@
 const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=f7dad340bc2e67bd09fa4951917cee86';
-
+var cTmp;
+var wSpeed;
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -7,7 +8,7 @@ fetch(apiURL)
     console.log(jsObject);
     console.log(wSpeed);
     document.getElementById('current-temp').textContent = Math.round(((jsObject.main.temp - 273.15) * 9/5 + 32) * 100) / 100;
-    const wSpeed = jsObject.wind.speed;
+    wSpeed = jsObject.wind.speed;
     const humidity = jsObject.main.humidity;
     
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
@@ -15,13 +16,13 @@ fetch(apiURL)
     document.getElementById('imagesrc').textContent = imagesrc; // display image source in paragraph
     document.getElementById('icon').setAttribute('src', imagesrc); // set the icon source 
     document.getElementById('icon').setAttribute('alt', desc);
-    document.getElementById("humidty").innerHTML = humidity;
-    document.getElementById('currently').innerHTML = desc;
+    document.getElementById("humidty").textContent = humidity;
+    document.getElementById('currently').textContent = desc;
     // Windchill
     
     const windChillDisp = document.getElementById("wChill");
     // const cTmp = parseFloat(document.getElementById("current-temp").textContent);
-    const cTmp = Math.round(((jsObject.main.temp - 273.15) * 9/5 + 32) * 100) / 100;
+    cTmp = Math.round(((jsObject.main.temp - 273.15) * 9/5 + 32) * 100) / 100;
 
   });
 
