@@ -1,6 +1,6 @@
 
 
-const forcastURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=f7dad340bc2e67bd09fa4951917cee86';
+const forcastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=f7dad340bc2e67bd09fa4951917cee86';
 var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; 
 
 fetch(forcastURL)
