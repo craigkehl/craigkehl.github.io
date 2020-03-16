@@ -24,5 +24,4 @@ fetch(apiURL)
     document.getElementById("ricky").textContent = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     document.getElementById("bob").setAttribute('src', `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`);
     document.getElementById("bob").setAttribute('alt', jsObject.weather[0].description);
-
 });
