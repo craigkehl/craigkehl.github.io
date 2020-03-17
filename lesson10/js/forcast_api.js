@@ -17,7 +17,6 @@ fetch(forcastURL)
       c++;
     })
     console.log(jsnObject);
-
   });
 
 
