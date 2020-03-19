@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli|Source+Serif+Pro|Trade+Winds&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+line-height: 1.1em;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  color: #3c3c3b;  
+  background-color: #ebebd3;
+  padding-bottom: 2em;
+}
+
+
+/******* Headline elements *******/
+/*********************************/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Serif Pro', serif;
+  color: #3c3c3b;
+	text-shadow: .5px .5px 0px black;
+	text-align: center; 
+}
+
+h2 {
+  grid-column: 2 / 3;
+  align-self: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 90%;
+  margin: 8px auto 8px auto;
+}
+
+/* Main area  */
+
+.cards {
+  display: block;
+  margin: 0 auto 2em auto;
+  padding: 10px;
+  color: #444;
+  width:90%;
+  height: auto;
+  position: relative;
+  box-shadow: 1px 1px 3px #3c3c3b; 
+}
+
+section {
+  border: 1px solid;
+  padding: 10px;
+  width: 95%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 3fr 1fr 1fr auto;
+
+}
+
+section p {
+  grid-column: 2 / 3;
+  font-size: 12px;
+  max-width: 240px;
+  width: 100%;
+  padding: 5px;
+}
+
+div.cards section img {
+  grid-column: 2 / 3;
+  object-fit: cover;
+  max-width: 240px;
+  max-height: 290px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+
+footer {
+  text-align: center;
+  margin: 1em;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  padding: 1rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+    div.cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+      font-size: 38px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+  div.cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
