@@ -139,7 +139,7 @@ Roughly 600 px as break point
   }
 
   div.map iframe {
-    width: 40vw;
+    width: 100%;
     height: 250px;
   }
 
