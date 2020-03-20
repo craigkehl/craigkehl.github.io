@@ -74,11 +74,20 @@ Roughly 600 px as break point
   }
 
   .forecast h3 {
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: center;
     padding: .5em;
     width: 100%;
     margin: .5em auto;
+  }
+     
+  .describe {
+    font-size: 16px;
+  }
+
+  .icon img {
+    width: 100%;
+    height: auto;
   }
 
   .card {
@@ -89,7 +98,7 @@ Roughly 600 px as break point
 
   .label {
     background-color: #1446a0;
-    font-size: 1.2rem;
+    font-size: 24px;
     font-weight: bold;
   }
 

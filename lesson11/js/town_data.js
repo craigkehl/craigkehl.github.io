@@ -32,7 +32,7 @@ fetch(requestURL)
       tRainH.textContent = "Annual Rainfall";
       tRainData.textContent = town.averageRainfall;
       image.setAttribute ('src', `images/${town.photo}`);
-      image.setAttribute('alt', `Pictue of ${town.name}`);
+      image.setAttribute('alt', `Picture of ${town.name}`);
 
       divH.appendChild(tName);
       divH.appendChild(tMotto);

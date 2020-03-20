@@ -13,6 +13,7 @@ fetch(forcastURL)
       document.getElementById('day' + c + '_label').textContent = days[d. getDay()];
       let temp = Math.round(((row.main.temp - 273.15) * 9/5 + 32) * 100) / 100;
       document.getElementById('day' + c + '_icon').setAttribute('src', `https://openweathermap.org/img/w/${row.weather[0].icon}.png`);
+      document.getElementById('day' + c + '_icon').setAttribute('alt', row.weather[0].description);      
       document.getElementById('day' + c + '_temp').textContent = (temp + "\xB0 F");
       c++;
     })
