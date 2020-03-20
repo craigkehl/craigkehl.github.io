@@ -46,6 +46,7 @@ fetch(requestURL)
       card.appendChild(divD);
       card.appendChild(image);
 
-      document.querySelector('div.townCards').appendChild(card);
+      document.querySelector('div.townCards').appendChild(card);     
+
     })
   });

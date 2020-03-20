@@ -19,9 +19,4 @@ fetch(apiURL)
         return "very low";
       }
     }
-   
-    document.getElementById("temp").textContent = Math.round(((jsObject.main.temp - 273.15) * 9/5 + 32) * 100) / 100; 
-    document.getElementById("ricky").textContent = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    document.getElementById("bob").setAttribute('src', `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`);
-    document.getElementById("bob").setAttribute('alt', jsObject.weather[0].description);
 });
