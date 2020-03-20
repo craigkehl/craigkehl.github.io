@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> WeatherOrNot.tv | Local Weather for Preston Id</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -36,8 +37,97 @@
     </nav>
     <main>
       <h2>Soda Springs Local Weather</h2>
-      <div class="contentbox">Something good</div>
-  </main>
+      <div class="contentbox">
+        <picture>
+          <source media="(min-width: 1000px)" srcset="images/heroBg_1230W.jpg">
+          <source media="(min-width: 600px)" srcset="images/heroMd_700W.jpg">
+          <img src="images/heroSm_500W.jpg" alt="landscape">
+          </picture>
+        <div id="summary">
+          <h2>Weather Summary</h2>
+          <div class="table">
+            <div class="header">Currently:</div>
+            <div class="data"><span id="currently"></span></div>
+            <div class="header">Temp:</div>
+            <div class="data"><span id="current-temp"></span>&deg; F</div>
+            <div class="header">Wind Chill:</div>
+            <div class="data"><span id="wChill"></span></div>
+            <div class="header">Humidty:</div>
+            <div class="data"><span id="humidty"></span></div>
+            <div class="header">Wind Speed:</div>
+            <div class="data"><span id="wSpeed"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="forecast">
+        <h3 id="fiveDayBanner">5 Day Forecast</h3>
+        <div class="fiveDay">
+          <div class="card" id="day1">
+            <span class="label" id="day1_label"></span>
+            <span class="icon"><img src="" alt="" id="day1_icon"/></span>
+            <span class="describe" id="day1_temp"></span>
+          </div>
+          <div class="card" id="day2">
+            <span class="label" id="day2_label"></span>
+            <span class="icon"><img src="" alt="" id="day2_icon"/></span>
+            <span class="describe" id="day2_temp"></span>
+          </div>
+          <div class="card" id="day3">
+            <span class="label" id="day3_label"></span>
+            <span class="icon"><img src="" alt="" id="day3_icon"/></span>
+            <span class="describe" id="day3_temp"></span>
+          </div>
+          <div class="card" id="day4">
+            <span class="label" id="day4_label"></span>
+            <span class="icon"><img src="" alt="" id="day4_icon"/></span>
+            <span class="describe" id="day4_temp"></span>
+          </div>
+          <div class="card" id="day5">
+            <span class="label" id="day5_label"></span>
+            <span class="icon"><img src="" alt="" id="day5_icon"/></span>
+            <span class="describe" id="day5_temp"></span>
+          </div>
+        </div>
+      </div>
+      <article class="contentbox">
+        <img src="images/SpringCleanSm.jpg" alt="Spring cleaning effort">
+        <div class="author">
+          <h3>Lorem Ipsum</h3>
+          <h5>by Mikey Smarts</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum ultricies erat, a tristique magna viverra id. Quisque sollicitudin vehicula ligula non porttitor. Vivamus vel risus luctus metus vestibulum lobortis. Etiam tincidunt tincidunt odio, congue porttitor justo luctus id. Aliquam nec quam nec neque pulvinar congue. Sed varius posuere pretium. Sed ac metus auctor tortor mattis blandit in non purus. Duis et augue pellentesque, gravida enim at, lobortis tortor. Aenean enim risus, consequat nec ipsum nec, dignissim porta lorem. Donec hendrerit risus sit amet ligula dictum molestie. Pellentesque mauris risus, ultrices nec placerat ac, hendrerit eget ante. Sed quis leo ut ligula tristique bibendum a a sapien.
+        </p>
+        <p>
+          Ut pulvinar nisl nibh, a placerat lectus congue in. Nunc laoreet blandit luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin id tellus vel massa tempor sollicitudin. Morbi ultricies nec magna eget posuere. Ut iaculis, neque quis imperdiet mattis, tortor tellus elementum sem, vitae euismod massa felis at nulla. Etiam mattis, metus sit amet rhoncus ullamcorper, erat nunc tincidunt dolor, tincidunt tincidunt enim eros vitae nunc. Phasellus venenatis purus et dapibus sodales. Nunc suscipit imperdiet odio vitae vehicula. Nulla in vulputate dolor, a porta leo. Quisque massa nisi, varius et placerat sed, consectetur non dui. Vestibulum a nibh orci.
+        </p>
+      </article>
+      <div class="contentbox contactUs">
+        <div class="contactInfo">
+          <div class="address">
+            <h3>Weather Or Not</h3>
+            <p>
+              321 N Thunder Bolt Wy<br>
+              Preston, ID 83263
+            </p>
+          </div>
+          <div class="electronic">
+            <p> (999) 888-7777</p>
+            <p> weatherornot.org</p>
+          </div>
+          <div class="social">
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5868.230002239498!2d-111.59939372655126!3d42.65891832888644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1584667874456!5m2!1sen!2sus"></iframe>
+        </div>
+      </div>
+    </main>
     
   <footer>
     <p>
@@ -47,10 +137,13 @@
     </p>      
   </footer>
 
+
   <script src="js/hamburger_menu.js"></script>
   <script src="js/display_today.js"></script>
   <script src="js/is_friday.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="js/windchill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>  
+  <script src="js/ss_weatherapi.js" defer></script>
+  <script src="js/ssForcast_api.js" defer></script>
+  <!-- <script src="js/webFont.js"></script> -->
   </body>
 </html>
