@@ -208,12 +208,14 @@ h3#fiveDayBanner, div.fiveDay #day1, #day2,
   display: none;
 }
 
-div.Soda_Springs_event {
+div.Soda_Springs_event,
+div.Fish_Haven_event,
+div.Preston_event  {
   background-color: #3c3c3b;
   padding: 0 0 10px 0;
   width: 80%;
   max-width: 450px;
-  margin: auto;
+  margin: 25px auto;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 2fr;
@@ -238,6 +240,7 @@ div.Soda_Springs_event {
 }
 
 .eventDate {
+  display: none;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   color: #ebebd3;
@@ -250,6 +253,7 @@ div.Soda_Springs_event {
 }
 
 .eventInfo {  
+  display: none;
   min-height: 35px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;

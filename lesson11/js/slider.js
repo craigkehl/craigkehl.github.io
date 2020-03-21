@@ -4,7 +4,7 @@ var slideIndex = 0;
 lateStart();
 
 function lateStart() {
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, 1000);
 }
 
 function showSlides() {
