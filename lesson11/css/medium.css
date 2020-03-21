@@ -123,22 +123,24 @@ Roughly 600 px as break point
   
   article.contentbox img {
     width: 50%;
+    height: auto;
     max-width: 450px;
     float: right;
-    margin: .5em .5em 2em 2em;
+    margin: 24px 24px 2em 2em;
   }
 
   div.author {    
     margin-bottom: 2em;
   }
     
-  article h3, h5 {
+  article h3, h5, h6 {
     margin-left: 0;
     text-align: left;
   }
 
   div.contactUs {
     display: flex;
+    overflow: hidden;
   }
 
   div.map {
@@ -198,10 +200,17 @@ Roughly 600 px as break point
     padding-left: 10px;
 
   }
-
   
-div.townCards section div h5 {
-  text-align: left;
-  padding-left: 10px;
-}
+  div.townCards section div h5 {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  div.Soda_Springs_event {
+    max-width: 800px;
+  }
+
+  .eventHeader h2, .eventDate, .eventInfo {
+    font-size: 150%;
+  }
 }

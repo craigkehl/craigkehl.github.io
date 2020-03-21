@@ -167,7 +167,8 @@ div.contentbox picture img {
   left: 2em;
 }
 
-#summary h2 {
+#summary h2,
+div.eventHeader {
   width: 100%;
   height: auto;
   margin: 0 0 5px 0;

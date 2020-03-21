@@ -122,4 +122,20 @@
     font-size: 24px;
   }
 
+  .contentbox {
+    min-height: 375px;
+  }
+  
+  div.Soda_Springs_event {
+    max-width: 900px;
+  }
+
+  .eventHeader h2, .eventDate, .eventInfo {
+    font-size: 170%;
+  }
+
+
+
+
+
 }
