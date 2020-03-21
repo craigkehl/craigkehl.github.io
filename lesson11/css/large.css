@@ -131,7 +131,9 @@
     width: 99%;
     box-shadow: 4px 4px 6px #3c3c3b;
   }
-  div.Soda_Springs_event {
+  div.Soda_Springs_event,
+  div.Fish_Haven_event,
+  div.Preston_event {
     max-width: 900px;
   }
 

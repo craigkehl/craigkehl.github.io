@@ -127,6 +127,10 @@ Roughly 600 px as break point
     margin: 20px 24px 2em 2em;
   }
 
+  .top figure img.top {
+    width: 100%;
+  }
+
   figcaption {
     margin: 15px;
     width: 40%;
@@ -137,7 +141,7 @@ Roughly 600 px as break point
 
   
   article.contentbox img {
-    width: 100%;
+    width: 50%;
     height: auto;
     max-width: 400px;
   }
@@ -219,7 +223,9 @@ Roughly 600 px as break point
     padding-left: 10px;
   }
 
-  div.Soda_Springs_event {
+  div.Soda_Springs_event,
+  div.Preston_event,
+  div.Fish_Haven_event {
     max-width: 800px;
   }
 

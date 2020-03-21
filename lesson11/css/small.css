@@ -283,8 +283,9 @@ article.contentbox img {
   display: block;
   width: 90%;
   max-width: 450px;
-  margin: 20px auto 10px auto;
+  margin: 25px;
   height: auto;
+  float: right;
 }
 
 div.author {
