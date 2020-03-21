@@ -120,13 +120,26 @@ Roughly 600 px as break point
     padding: 10px;
   }
 
-  
-  article.contentbox img {
-    width: 50%;
+  figure {    
     height: auto;
     max-width: 450px;
     float: right;
-    margin: 24px 24px 2em 2em;
+    margin: 20px 24px 2em 2em;
+  }
+
+  figcaption {
+    margin: 15px;
+    width: 40%;
+    position: absolute;
+    right: 57px;
+    top: 307px;
+  }
+
+  
+  article.contentbox img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
   }
 
   div.author {    

@@ -270,6 +270,15 @@ div .header {
 
 }
 
+figcaption {
+  width: 88%;
+  font-size: 60%;
+  margin: -35px auto 15px auto;
+  color: white;
+  text-align: right;
+  text-shadow: 2px 2px #000000;
+}
+
 article.contentbox img {
   display: block;
   width: 90%;
@@ -566,4 +575,5 @@ textarea.stormReport {
 input.range {
   display: inline;
 }
+
 
