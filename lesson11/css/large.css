@@ -76,6 +76,7 @@
     margin-top: 5px;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
+    box-shadow: 4px 4px 6px #3c3c3b;
   }
 
   div.townCards section div:first-child {
@@ -126,6 +127,10 @@
     min-height: 375px;
   }
   
+  .top {
+    width: 99%;
+    box-shadow: 4px 4px 6px #3c3c3b;
+  }
   div.Soda_Springs_event {
     max-width: 900px;
   }
