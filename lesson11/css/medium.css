@@ -2,7 +2,7 @@
 Roughly 600 px as break point
 */
 @media only screen and (min-width: 600px) {
-  header, footer, main {
+   footer, main {
     margin: 5px;
   }
 
