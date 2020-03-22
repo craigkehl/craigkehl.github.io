@@ -145,10 +145,10 @@ h2 {
   padding: 20px;
   color: #444;
   font-style: italic;
-  width:90%;
+  width:98%;
   height: auto;
   position: relative;
-  box-shadow: 1px 1px 3px #3c3c3b; 
+  box-shadow: 3px 3px 6px #3c3c3b;
   overflow: hidden;
 }
 
