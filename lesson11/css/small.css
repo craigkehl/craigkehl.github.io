@@ -286,6 +286,7 @@ article.contentbox img {
   margin: 25px;
   height: auto;
   float: right;
+  border: solid 1px #3b3b3c;
 }
 
 div.author {
