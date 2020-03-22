@@ -401,7 +401,8 @@ div.townCards section div:nth-child(2) p {
 
 
 div.townCards section div:nth-child(1) p {
-  color: #db3069;
+  color: #580a24;
+  font-weight: bolder;
 }
 
 /*************** Gallery *****************/
