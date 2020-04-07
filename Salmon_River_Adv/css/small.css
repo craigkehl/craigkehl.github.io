@@ -1,0 +1,98 @@
+
+
+iframe.hero {
+width: 560;
+height: 349;
+border: 0;
+}
+/**  Attribute aspect ratio control https://css-tricks.com/fluid-width-video/ **/
+.aspect_16-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.aspect_16-9 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/******* Navigation area *******/
+/*********************************/
+nav {
+	background-color: #5ea59b;
+	text-align: center;
+  box-shadow: 0 2px 15px gray;  
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 55px auto;
+  align-items: center;
+  justify-items: center;
+}
+
+nav div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+ul.navigation {
+	list-style-type: none;
+	padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+nav ul li a {
+	display: block;
+	color: #ebebd3;
+	text-align: center;
+	padding: 8px;
+	text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+/* 
+.navigation li:first-child {
+	display: block;
+} */
+
+.navigation li {
+	display: none;
+}
+
+nav ul li a.active {
+  color: #f5d547;
+}
+
+ul.navigation img.logo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+ul.navigation img.sign_in {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+  .responsive li {
+    display: block;
+    border: 1px solid white;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  
