@@ -1,4 +1,12 @@
+/* Color Section
 
+Off-white: #F1f8f8
+Tan: #ecd78e
+Rose:	#d75e74
+Teal: #5ea59b
+Brown: #9e7d22
+
+*/
 
 iframe.hero {
 width: 560;
@@ -26,13 +34,28 @@ border: 0;
 nav {
 	background-color: #5ea59b;
 	text-align: center;
-  box-shadow: 0 2px 15px gray;  
+  box-shadow: 0 2px 15px gray;
+  position: sticky;
+  top: 0px;
+  left: 0px;  
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 55px auto;
   align-items: center;
   justify-items: center;
+  overflow: hidden;
+  z-index: 10;
 }
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid #f1f8f8;
+}
+
 
 nav div {
   grid-column: 1 / 2;
@@ -95,4 +118,168 @@ ul.navigation img.sign_in {
     height: auto;
     width: 100%;
   }
+
+  /************** Main Area Components *************************************/
+  /**  Activity  **/
+ main {
+   background-image: linear-gradient(to left bottom, 
+   rgba(236, 215, 142, 0.6), rgba(94, 165, 155, 0.6)), 
+   url(/Salmon_River_Adv/images/background.jpg);
+   background-size: cover;
+   padding: 16px;
+ }
+ 
+ h1 {
+   text-align: center;
+    font-size: 1.5em;   
+ }
+  section {
+   width: 100%vw;
+   margin: auto;
+   position: relative;
+ } 
+
+ section.activities div.card {
+   width: 90%;
+   display: grid;
+   align-items: center;
+   justify-items: center;
+   grid-template-columns: 1fr;
+   grid-template-rows: minmax(2fr, 200px) .5fr .5fr minmax(2fr, 200px) .5fr;
+   margin: 50px auto;
+   overflow: hidden;
+   border: 2px solid #ecd78e;
+   box-shadow: 8px 8px 6px black;
+ }
+
+
+ section.activities div img {
+   grid-column: 1 / 2;
+   grid-row: 1 / 3;   
+   width: 100%;
+   /* height: 100%; */
+   border-bottom: 2px solid #ecd78e;
+ }
+
+ section.activities div h3{
+   background-color: #d75e74;
+   color: #f1f8f8;
+   z-index: 2;
+   padding: 5px;
+   width: 50%;
+   text-align: center;
+   height: 30px;
+   grid-column: 1 / 2;
+   grid-row: 2 / 4;
+   border: 2px solid #ecd78e;
+ }
+
+ section.activities div div.description {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  width: 100%;
+  height: 100%; 
+  max-height: 100px; 
+  padding: 0;
+  margin: 0;
+  background-color: #f1f8f8;
+}
+
+section.activities div div.description p {
+  padding: 32px 16px;
+}
+
+div.action_call {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: #5ea59b;
   
+
+}
+
+/* 
+
+  /**  Test code
+  
+div.main {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+}
+div.biking {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation-name: bike;
+  animation-iteration-count: 10;
+  animation-duration: 24s;
+}
+
+div.hiking {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  animation-name: hike;
+  animation-iteration-count: 10;
+  animation-duration: 24s;
+}
+div.rafting {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  animation-name: raft;
+  animation-iteration-count: 10;
+  animation-duration: 24s;
+}
+
+@keyframes bike {
+  0%, 100% {left:  0%; top:  0%;  width:  50%;}
+  15%      {left:  0%; top:  0%;  width:  50%;}
+  20%      {left:  0%; top:  0%;  width: 100%;}
+  35%      {left:  0%; top:  0%;  width: 100%;}
+  40%      {left: 50%; top:  0%;  width:  50%;}
+  55%      {left: 50%; top:  0%;  width:  50%;}
+  60%      {left: 50%; top: 50%;  width:  50%;}
+  75%      {left: 50%; top: 50%;  width:  50%;}
+  80%      {left:  0%; top: 50%;  width: 100%;}
+  95%      {left:  0%; top: 50%;  width: 100%;}
+}
+
+@keyframes hike {
+  0%, 100% {left: 50%; top:  0%;  width:  50%;}
+  15%      {left: 50%; top:  0%;  width:  50%;}
+  20%      {left: 50%; top: 50%;  width:  50%;}
+  35%      {left: 50%; top: 50%;  width:  50%;}
+  40%      {left:  0%; top: 50%;  width: 100%;}
+  55%      {left:  0%; top: 50%;  width: 100%;}
+  60%      {left:  0%; top: 50%;  width:  50%;}
+  75%      {left:  0%; top: 50%;  width:  50%;}
+  80%      {left:  0%; top:  0%;  width:  50%;}
+  95%      {left:  0%; top:  0%;  width:  50%;}
+}
+
+@keyframes raft {
+  0%, 100% {left:  0%; top: 50%;  width: 100%;}
+  15%      {left:  0%; top: 50%;  width: 100%;}
+  20%      {left:  0%; top: 50%;  width:  50%;}
+  35%      {left:  0%; top: 50%;  width:  50%;}
+  40%      {left:  0%; top:  0%;  width:  50%;}
+  55%      {left:  0%; top:  0%;  width:  50%;}
+  60%      {left:  0%; top:  0%;  width: 100%;}
+  75%      {left:  0%; top:  0%;  width: 100%;}
+  80%      {left: 50%; top:  0%;  width:  50%;}
+  95%      {left: 50%; top:  0%;  width:  50%;}
+}
+
+div.weather {
+  position: relative;
+} */
