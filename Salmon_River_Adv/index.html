@@ -23,17 +23,15 @@
       <!-- Sticky Navigation-->
 
     <nav id="navbar">
-      <div><a class="hamburger">&#9776; Menu</a></div>
-      
+      <div><a class="hamburger">&#9776; Menu</a></div>      
       <!-- Small logo only used with the Hamburger menu -->
       <img class="hamburger logo" src="images/sm_logo_135W.png" alt="logo"/>
       <!-- Need to see about if a lable should be used for an image only sign-in -->
-      <input type="image" src="images/Sign-in_52w.png" class="hamburger sign_in" name="mini_sign_in" id="mini_sign_in">
+      <span class="hamburger data" id="current-temp"></span><img class="hamburger data" src="" alt="" id="current_icon"/> 
+      </div>
       <ul class="navigation">
-        <li></li>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="#">Adventures</a></li>
-        <li><a href="#">Why Us</a></li>
         <li><a href="#">Make a Reservation</a></li>
         <li><a href="#">Contact US</a></li>
         <li><a href="3">Testimonials</a></li>
@@ -49,7 +47,7 @@
           <img src="images/activity_bike_300w.jpg" alt="biking">          
           <h3>Biking</h3>
           <div class="description">
-            <p>Miles of trails for every skill level!</p>
+            <p><strong>Your adventure</strong> includes miles of trails for every skill level! Ready to conqure a mountain? Do you feel the need for speed? How about a relaxing ride? We have state-of-the-art, professionally tuned mountain-bikes and road-cycles that are ready for the action level you want.</p>
           </div>
           <div class="action_call">
             CHECK IT OUT
@@ -60,7 +58,7 @@
           <img src="images/activity_hike_300w.jpg" alt="hiking">          
           <h3>Hiking</h3>
           <div class="description">
-            <p>Fill your lungs with fresh air!</p>
+            <p>Fill your lungs with fresh air, and set your mind free! Six conveniet trails start off right from our lodge. If you want to have a private conversation, organize a group challenge, or need a moment to yourself, there is nothing like our prestine outdoors filled with the music of our abundant wildlife.</p>
           </div>
           <div class="action_call">
             CHECK IT OUT
@@ -71,10 +69,10 @@
           <img src="images/activity_raft_300w.jpg" alt="rafting">
           <h3>Rafting</h3>
           <div class="description">
-            <p>Thrills that take your breath away!</p>
+            <p>Find thrills to take your breath away and get your heart pumping! Reinvigorate your zest for adventure while taking in the beauty of the mountains and the river. Our guides will get to know you, and can safely put together an adventure to drive your social media conversations for many months! Trips vary in length, skill level, and features.</p>
           </div>
           <div class="action_call">
-            CHECK IT OUT
+            DISCOVER YOUR ADVENTURE
           </div>          
         </div>
       
@@ -93,5 +91,6 @@
     <!-- Scripts area-->
     <script src="js/hamburger_menu.js"></script>
     <script src="js/sticky_nav.js"></script>
+    <script src="js/current_weather.js"></script>
   </body>
 </html>
