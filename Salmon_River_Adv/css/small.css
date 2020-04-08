@@ -8,11 +8,36 @@ Brown: #9e7d22
 
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.1em;
+}
+  
+body {
+    font-size: 16px;
+    font-family: Heebo, sans-serif;
+    color: #000000;  
+    padding-bottom: 2em;
+  
+}
+
+
+h1, h2, h3 {
+  font-family: Rye, cursive;
+  color: #F1f8f8;
+  background-color: #9e7d22;
+  padding: 16px;
+  border-radius: 8px;
+}
+
 iframe.hero {
 width: 560;
 height: 349;
 border: 0;
 }
+
 /**  Attribute aspect ratio control https://css-tricks.com/fluid-width-video/ **/
 .aspect_16-9 {
   position: relative;
@@ -82,7 +107,7 @@ nav ul li a {
   font-size: 16px;
 }
 
-nav a:hover {
+nav ul li a:hover {
 	background-color: #bbb;
 	color: #36454f;
 }
@@ -97,6 +122,19 @@ nav a:hover {
 
 nav ul li a.active {
   color: #f5d547;
+}
+
+.large {
+  display: none;
+}
+
+p.co_name, p.co_motto {
+  display: none;
+}
+
+.grid_container {
+  width: 100%;
+  height: 100%;
 }
 
 nav img.logo {
@@ -148,8 +186,7 @@ nav span.data {
 
   img.non-sticky2 {
     position: absolute;
-    top: 42%;
-    left: 80%;
+    left: 85%;
   }
 
    img.sticky2 {
@@ -161,13 +198,16 @@ nav span.data {
 
  h1 {
    text-align: center;
-    font-size: 1.5em;   
+    font-size: 1.5em;
+    margin-left: 45px;
+    margin-right: 45px;   
  }
 
-  section {
+  section.activities {
    width: 100%vw;
    margin: auto;
    position: relative;
+   max-width: 1400px;
  } 
 
  section.activities div.card {
