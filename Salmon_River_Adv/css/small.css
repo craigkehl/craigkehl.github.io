@@ -49,13 +49,12 @@ nav {
 
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
+nav.sticky {
   position: fixed;
   top: 0;
   width: 100%;
   border: 1px solid #f1f8f8;
 }
-
 
 nav div {
   color: #ecd78e;
@@ -136,13 +135,35 @@ nav span.data {
    rgba(236, 215, 142, 0.6), rgba(94, 165, 155, 0.6)), 
    url(/Salmon_River_Adv/images/background.jpg);
    background-size: cover;
-   padding: 16px;
+   padding-top: 40px;
  }
  
+ #call_icon {
+   width: 10vw;
+   max-width: 100px;
+   min-width: 40px;
+   height: auto;
+   z-index: 5;
+ }
+
+  img.non-sticky2 {
+    position: absolute;
+    top: 42%;
+    left: 80%;
+  }
+
+   img.sticky2 {
+    position: fixed;
+    top: 15%;
+    left: 80%;
+  }
+
+
  h1 {
    text-align: center;
     font-size: 1.5em;   
  }
+
   section {
    width: 100%vw;
    margin: auto;
@@ -208,6 +229,12 @@ div.action_call {
   background-color: #5ea59b;
   
 
+}
+
+/*********************** Footer ********************************/
+
+footer {
+  text-align: center;
 }
 
 /* 
