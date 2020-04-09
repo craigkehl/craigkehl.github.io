@@ -19,10 +19,10 @@ fetch(requestURL)
 
 
       tName.textContent = trip.name;
-      tCost.textContent = `COST:"${trip.cost}"`;
-      gYears.textContent = `DIFFICULTY: ${trip.Difficulty}`;
-      tLength.textContent = `LENGTH: ${trip.Length}`;  
-      tDates.textContent = `DATES: ${trip.Dates}`;
+      tCost.textContent = `COST: "${trip.Cost}"`;
+      gYears.textContent = `DIFFICULTY:  ${trip.Difficulty}`;
+      tLength.textContent = `LENGTH:  ${trip.Length}`;  
+      tDates.textContent = `DATES:  ${trip.Dates}`;
       image.setAttribute ('src', trip.photo);
       image.setAttribute('alt', `Picture of ${trip.name}`);
 

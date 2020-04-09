@@ -5,7 +5,7 @@
       "Dates": "May 5th, May 20th, June 12th",
       "Difficulty": "Advanced",
       "Length": "4 days",
-      "Cost": " $2,500 per person",
+      "Cost": "$2,500 per person",
       "photo": "images/trip1_300w.jpg"
     },
     {
@@ -13,7 +13,7 @@
       "Dates": "May 15th, May 29th, June 22th",
       "Difficulty": "intermediate",
       "Length": "2 days",
-      "Cost": " $1,500 per person",
+      "Cost": "$1,500 per person",
       "photo": "images/trip2_300w.jpg"
     },
     {
@@ -21,7 +21,7 @@
       "Dates": "May 1th, May 11th, June 11th",
       "Difficulty": "Beginer",
       "Length": "1 days",
-      "Cost": " $500 per person",
+      "Cost": "$500 per person",
       "photo": "images/trip3_300w.jpg"
     },
     {
@@ -29,7 +29,7 @@
       "Dates": "June 5th, June 20th, July 12th",
       "Difficulty": "Advanced",
       "Length": "5 days",
-      "Cost": " $3,500 per person",
+      "Cost": "$3,500 per person",
       "photo": "images/trip4_300w.jpg"
     },
     {
@@ -37,7 +37,7 @@
       "Dates": "July 5th, July 20th, Aug 12th",
       "Difficulty": "Beginner",
       "Length": "3 days",
-      "Cost": " $2,000 per person",
+      "Cost": "$2,000 per person",
       "photo": "images/trip5_300w.jpg"
     }    
   ]
