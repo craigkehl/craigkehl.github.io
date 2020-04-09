@@ -9,41 +9,32 @@ fetch(requestURL)
     console.log(jsonObject);
     guides.forEach(guide => {
       let card = document.createElement('section');
-      let divH = document.createElement('div');
-      let tName = document.createElement('h3');
-      let tMotto = document.createElement('p');
-      let divD = document.createElement('div');
-      let tFoundH = document.createElement('h5');
-      let tFoundData = document.createElement('p');
-      let tPopH = document.createElement('h5');
-      let tPopData = document.createElement('p');
-      let tRainH = document.createElement('h5');
-      let tRainData = document.createElement('p');
       let image = document.createElement('img');
-      tName.textContent = town.name;
-      tMotto.textContent = town.motto;
-      tFoundH.textContent = "Founded";
-      tFoundData.textContent = town.yearFounded;
-      tPopH.textContent = "Population";
-      tPopData.textContent = town.currentPopulation;
-      tRainH.textContent = "Annual Rainfall";
-      tRainData.textContent = town.averageRainfall;
-      image.setAttribute ('src', `images/${town.photo}`);
-      image.setAttribute('alt', `Picture of ${town.name}`);
+      let divInfo = document.createElement('div');
+      let gYears = document.createElement('span');
+      let gHome = document.createElement('span');
+      let gEduc = document.createElement('span');
+      let tName = document.createElement('h3');
+      let tMotto = document.createElement('h4');
 
-      divH.appendChild(tName);
-      divH.appendChild(tMotto);
-      divD.appendChild(tFoundH);
-      divD.appendChild(tFoundData);
-      divD.appendChild(tPopH);
-      divD.appendChild(tPopData);
-      divD.appendChild(tRainH);
-      divD.appendChild(tRainData);
-      card.appendChild(divH);
-      card.appendChild(divD);
+
+      tName.textContent = `${guide.firstname} ${guide.lastname}`;
+      tMotto.textContent = guide.motto;
+      gYears.textContent = `Years of Experience: ${guide.yrsexperience}`; //complete Years of Experience
+      gHome.textContent = `Hometown: ${guide.hometown}`;  // complete string
+      gEduc.textContent = `Education: ${guide.education}`;   // complete string Education background
+      image.setAttribute ('src', guide.photo);
+      image.setAttribute('alt', `Picture of ${guide.firstname} ${guide.lastname}`);
+
+      divInfo.appendChild(gYears);
+      divInfo.appendChild(gHome);
+      divInfo.appendChild(gEduc);
       card.appendChild(image);
+      card.appendChild(divInfo);
+      card.appendChild(tName);
+      card.appendChild(tMotto);
 
-      document.querySelector('div.townCards').appendChild(card);     
+      document.querySelector('div.guides').appendChild(card);     
 
     })
   });
