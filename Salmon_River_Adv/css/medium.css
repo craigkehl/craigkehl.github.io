@@ -64,6 +64,7 @@ Roughly 600 px as break point
   }
 
   p.co_name {
+    display: block;
     color: #f1f8f8;
     font-family: Rye, cursive;
     font-size: 28px;
@@ -76,6 +77,7 @@ Roughly 600 px as break point
   }
 
   p.co_motto {
+    display: block;
     font-family: Heebo, serif;
     color: #f1f8f8;
     font-weight: 400;
