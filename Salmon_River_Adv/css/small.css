@@ -336,6 +336,65 @@ div.guides section h4 {
   border-bottom-right-radius: 8px;
 }
 
+/**************** Trips *************************/
+
+div.trips_page {
+  width: 95vw;
+  margin: 50px 5px;
+}
+
+div.trips_page section {
+  margin: 50px 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr) 1fr;
+  grid-template-rows: 1.5fr .5fr .5fr 2.5fr 2fr 2fr;
+  
+}
+
+div.trips_page section img {
+  width: 90%;
+  border: 8px solid #d75e74;
+  border-radius: 50%;
+  grid-column: 3 / 6;
+  grid-row: 1 / 5;
+  z-index: 2;
+}
+
+div.trips_page section div {
+  margin: 0;
+  padding: 25% 10% 5% 10%;
+  font-size: 18px;
+  background-color: #F1f8f8;
+  border: 8px solid #5ea59b;
+  grid-column: 1 / 5;
+  grid-row: 3 / 6;
+}
+
+div.trips_page section div span {
+  display: block;
+  margin: 18px;
+  font-weight: 900;
+
+}
+
+div.trips_page section h3 {
+  background-color: #d75e74;
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  z-index: 1;
+}
+
+div.trips_page section h4 {
+  background-color: #5ea59b;
+  color: #F1f8f8;
+  padding: 16px;
+  grid-column: 1 / 5;
+  grid-row: 6 / 7;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
 main.reservations {
   padding-bottom: 50px;
 }
