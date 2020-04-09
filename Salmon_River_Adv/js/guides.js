@@ -1,16 +1,11 @@
-const guidedata = require('./')
-// Load the array with the towns you wish to pull data about
-const tList = ['Fish Haven', 'Preston', 'Soda Springs'];
-
-fetch(requestURL)
+fetch("data/guides.js")
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    const towns = jsonObject['towns'];
-    towns.filter(town=>{
-      return tList.includes(town.name)
-    }).forEach(town => {
+    const guides = jsonObject['guides'];
+    console.log("guides");
+    guides.forEach(guide => {
       let card = document.createElement('section');
       let divH = document.createElement('div');
       let tName = document.createElement('h3');
