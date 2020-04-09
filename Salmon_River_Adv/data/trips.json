@@ -6,7 +6,7 @@
       "Difficulty Level": "Advanced",
       "Length": "4 days",
       "Cost": " $2,500 per person",
-      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+      "photo": "images/trip1_300w.jpg"
     },
     {
       "name": "Gone for the Day",
@@ -14,7 +14,7 @@
       "Difficulty Level": "intermediate",
       "Length": "2 days",
       "Cost": " $1,500 per person",
-      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+      "photo": "images/trip2_300w.jpg"
     },
     {
       "name": "Toilette Bowl Twirl",
@@ -22,7 +22,7 @@
       "Difficulty Level": "Beginer",
       "Length": "1 days",
       "Cost": " $500 per person",
-      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+      "photo": "images/trip3_300w.jpg"
     },
     {
       "name": "Crusher Canyon",
@@ -30,7 +30,7 @@
       "Difficulty Level": "Advanced",
       "Length": "5 days",
       "Cost": " $3,500 per person",
-      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+      "photo": "images/trip4_300w.jpg"
     },
     {
       "name": "Lazy Falls",
@@ -38,7 +38,7 @@
       "Difficulty Level": "Beginner",
       "Length": "3 days",
       "Cost": " $2,000 per person",
-      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+      "photo": "images/trip5_300w.jpg"
     }    
   ]
 }

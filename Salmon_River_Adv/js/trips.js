@@ -1,4 +1,4 @@
-const requestURL = 'https://craigkehl.github.io/Salmon_River_Adv/data/guides.json';
+const requestURL = 'https://craigkehl.github.io/Salmon_River_Adv/data/trips.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -18,7 +18,7 @@ fetch(requestURL)
       let tMotto = document.createElement('h4');
 
 
-      tName.textContent = `${guide.firstname} ${guide.lastname}`;
+      tName.textContent = guide.firstname;
       tMotto.textContent = `MY MOTTO:\n"${guide.motto}"`;
       gYears.textContent = `YEARS EXPERIENCE: ${guide.yrsexperience}`; //complete Years of Experience
       gHome.textContent = `HOMETOWN: ${guide.hometown}`;  // complete string
@@ -34,7 +34,7 @@ fetch(requestURL)
       card.appendChild(tName);
       card.appendChild(tMotto);
 
-      document.querySelector('div.guides').appendChild(card);     
+      document.querySelector('div.trips_page').appendChild(card);     
 
     })
   });
