@@ -174,6 +174,7 @@ nav span.data {
    url(/Salmon_River_Adv/images/background.jpg);
    background-size: cover;
    padding-top: 40px;
+   padding-bottom: 40px;
  }
  
  #call_icon {
@@ -275,6 +276,7 @@ div.action_call {
 
 footer {
   text-align: center;
+  margin-top: 34px;
 }
 
 /**************** Guides  *************************************/
@@ -283,6 +285,7 @@ footer {
 div.guides {
   width: 95vw;
   margin: 50px 5px;
+  padding-bottom: 36;
 }
 
 div.guides section {
@@ -483,7 +486,7 @@ form div {
   margin: 16px auto;
 }
 
-textarea.stormReport {
+textarea.special_requests {
   margin-top: 5px;
 }
 
@@ -497,6 +500,48 @@ input.range {
   display: inline;
 }
 
+/**************************** Contact ***************************************/
+main.contact {
+  margin-bottom: 36px;
+}
+
+div.contactUs { 
+  display: block;
+  background-color: #5ea59b;
+  border: 4px solid #d75e74;
+  box-shadow: 1px 1px 3px #3c3c3b; 
+  width: 90%;
+  max-width: 450px;
+  margin: 16px auto;
+}
+
+div.address h6, div.electronic h6 {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+div.address, div.electronic {
+  background-color: #5ea59b;
+  color: #F1f8f8;
+}
+
+.contactInfo h6, .contactInfo p, div.electronic ul li {
+  margin-top: 16px;
+  padding-top: 8px;
+  line-height: 1.6;
+  margin-left: 14px;
+}
+
+div.map {  
+  display: block;
+  width: 95%;
+  max-width: 450px;
+  margin: 16px auto;
+}
+div.map iframe {  
+  width: 100%;
+  border: none;
+}
 
 /* 
 
