@@ -10,7 +10,8 @@
         "First Aid",
         "CPR"
       ],
-      "motto": "Do I have to come in already? We're still playing."
+      "motto": "Do I have to come in already? We're still playing.",
+      "photo": "images/guide_robert_shelton.jpg"
     },
     {
       "firstname": "Pat",
@@ -22,7 +23,8 @@
         "EMT-Basic",
         "Class III River"
       ],
-      "motto": "When you understand the mind of a fish, everything else falls into place."
+      "motto": "When you understand the mind of a fish, everything else falls into place.",
+      "photo": "images/guide_pat_stevens.jpg"
     },
     {
       "firstname": "Blake",
@@ -36,7 +38,8 @@
         "EMT-Intermediate",
         "Class III River"
       ],
-      "motto": "Laughing, crying and acting can heal the world one connection at a time! "
+      "motto": "Laughing, crying and acting can heal the world one connection at a time!",
+      "photo": "images/guide_blake_connery.jpg"
     },
     {
       "firstname": "Ricardo",
@@ -48,7 +51,8 @@
         "Wilderness/Remote Location First Aid",
         "Class III River"
       ],
-      "motto": "You've got some splaining to do!"
+      "motto": "You've got some splaining to do!",
+      "photo": "images/guide_ricardo_mountoyez.jpg"
     }
   ]
 }

@@ -1,10 +1,12 @@
-fetch("data/guides.js")
+const requestURL = 'https://craigkehl.github.io/Salmon_River_Adv/data/guides.json';
+
+fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
     const guides = jsonObject['guides'];
-    console.log("guides");
+    console.log(jsonObject);
     guides.forEach(guide => {
       let card = document.createElement('section');
       let divH = document.createElement('div');
