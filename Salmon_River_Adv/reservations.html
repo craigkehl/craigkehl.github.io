@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="River Rafting with Salmon River Adventures in Salmon River Idaho
+    is fun, safe, and has plenty of white water rapids to ride. Our guides are the most experienced. Theyknow how to get your blood pumping. Make your coporate retreats, family reunions, and special events into a productive investment. We create memories, conversations to strength group members relationships, creativity and motivation to succeed." />
+    <meta name="author" content="Craig Kehl" />
+    <title>River Rafting Events in Salmon River ID: Salmon River Adventures</title>
+
+    <!-- STYLE SHEETS -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,400,900|Rye&display=swap" rel="stylesheet">
+  </head>
+  <body id="p2">
+    <header id="p1">
+    <nav id="navbar">
+      <div class="grid_container"><a class="hamburger">&#9776; Menu</a>
+        <img class="large logo" src="images/Logo_192w.png" alt="logo"/></div>      
+      <!-- Small logo only used with the Hamburger menu -->
+      <p class="co_name large" aria-label="Salmon River Adventures company name">Salmon River Adventures</p>
+      <p class="co_motto large" aria-lable="Fuel your thrill for life company motto">Fuel Your Thrill for Life</p>
+      <img class="hamburger logo" src="images/sm_logo_135W.png" alt="logo"/>
+      <!-- Need to see about if a lable should be used for an image only sign-in -->
+      <span class="data" id="current-temp"></span><img class="data" src="" alt="" id="current_icon"/> 
+      </div>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="guides.html" class="active">Our Guides</a></li>
+        <li><a href="reservations.html">Make a Reservation</a></li>
+        <li><a href="contact.html">Contact US</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main class="reservations">
+
+      <h2>Reserve Your Adventure Now</h2>
+      <!-- Tell the user the purpose-->
+      <p class="reservations">Because of the preparations and size of our groups, most adventures need to be booked six months in advance. To start your reservation, fill out form below. One of our professional corrdinators will contact you.  <br><br><span class="right">Thank you.</span></p>
+     
+      <!--Create a form to solicit current reports from users of local storms-->
+      <form method="get" action="thanks.html">
+        <div>
+          <fieldset>
+            <legend>Your Information</legend>
+            <!-- Require the user's full name witha text input-->
+            <label class="above">Full Name* <input type="text" name="name" required id="frmName" pattern="[A-Za-z .]{5,}"></label> 
+                       
+            <!-- Collect their email with an email input type and use a place holder as an example-->
+            <label class="above">Email <input type="email" name="email" id="frmEmail" </label>
+            
+            
+            <label class="above">Phone Number* <input type="tel" name="phone" ></label>
+
+            <label class="above">Zip Code <input type="number" name="zip" required id="frmZip" </label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Requested Adventure</legend>
+
+            <label class="above">Date of trip <input type="date" name="date" id="date"></label>
+
+            
+            <label class="above">Name of the trip <input list="trip_list" id="selected_trip" name="selected_trip" >
+            <datalist id="trip_list">
+              <option value="Take My Breath Away">
+              <option value="Gone for the Day">
+              <option value="Toilette Bowl Twirl">
+              <option value="Crusher Canyon">
+              <option value="Lazy Falls">
+            </datalist></label>
+
+            
+            <label class="above" for="people_count">Number of people in your party <span id="people_count">4</span>
+                <input class="range" type="range" name="count" id="count" value="4" min="1" max="10" step="1" list="number" oninput="countAdjust(this.value)" onchange="countAdjust(this.value)">
+            </label>
+            
+            <datalist id="number">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+            
+            <!-- List any special requests-->
+            <label class="above" for="comments">List any special requests: 
+              <textarea class="special_requests" name="comments" id="comments"></textarea>
+          </label>
+          </fieldset>
+          <input class="subButton" type="submit" value="reservation">
+        </div>         
+      </form>
+          </main>
+    <footer>
+      <p>
+        &copy;Salmon River Adventures 2020 | Craig H. Kehl | <a href="tel:+1-888-456-7890">+1 (888) 456-7890</a>
+        <span id="lastMod"></span>
+    </footer>
+
+    <!-- Scripts area-->
+    <script src="js/hamburger_menu.js"></script>
+    <script src="js/sticky_nav.js"></script>
+    <script src="js/current_weather.js"></script>
+    <script src="js/guides.js"></script>
+  </body>
+</html>

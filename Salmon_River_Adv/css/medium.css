@@ -91,7 +91,7 @@ Roughly 600 px as break point
     grid-row: 1 / 3;
   }
 
-  section.activities {
+  section.activities, div.activities {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   

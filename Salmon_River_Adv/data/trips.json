@@ -1,0 +1,44 @@
+{
+  "trips": [
+    {
+      "name": "Take My Breath Away",
+      "Dates": "May 5th, May 20th, June 12th",
+      "Difficulty Level": "Advanced",
+      "Length": "4 days",
+      "Cost": " $2,500 per person",
+      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+    },
+    {
+      "name": "Gone for the Day",
+      "Dates": "May 15th, May 29th, June 22th",
+      "Difficulty Level": "intermediate",
+      "Length": "2 days",
+      "Cost": " $1,500 per person",
+      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+    },
+    {
+      "name": "Toilette Bowl Twirl",
+      "Dates": "May 1th, May 11th, June 11th",
+      "Difficulty Level": "Beginer",
+      "Length": "1 days",
+      "Cost": " $500 per person",
+      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+    },
+    {
+      "name": "Crusher Canyon",
+      "Dates": "June 5th, June 20th, July 12th",
+      "Difficulty Level": "Advanced",
+      "Length": "5 days",
+      "Cost": " $3,500 per person",
+      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+    },
+    {
+      "name": "Lazy Falls",
+      "Dates": "July 5th, July 20th, Aug 12th",
+      "Difficulty Level": "Beginner",
+      "Length": "3 days",
+      "Cost": " $2,000 per person",
+      "photo": "images/guide_ricardo_mountoyez_300w.jpg"
+    }    
+  ]
+}
