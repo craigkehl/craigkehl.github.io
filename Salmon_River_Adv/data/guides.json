@@ -1,0 +1,54 @@
+{
+  "guides": [
+    {
+      "firstname": "Robert",
+      "lastname" : "Shelton",
+      "Yrsexperience": 5,
+      "education": "BS, outdoor recreation management",
+      "hometown": "Park City, UT",
+      "certifications": [
+        "First Aid",
+        "CPR"
+      ],
+      "motto": "Do I have to come in already? We're still playing."
+    },
+    {
+      "firstname": "Pat",
+      "lastname" : "Stevens",
+      "Yrsexperience": 15,
+      "education": "BS, Sustainable Forestry",
+      "hometown": "Spokan, WA",
+      "certifications": [
+        "EMT-Basic",
+        "Class III River"
+      ],
+      "motto": "When you understand the mind of a fish, everything else falls into place."
+    },
+    {
+      "firstname": "Blake",
+      "lastname" : "Connery",
+      "Yrsexperience": 12,
+      "education": "MS, Sports Coaching and Development in Outdoor Education",
+      "hometown": "Kingussie, UK",
+      "certifications": [
+        "Wilderness/Remote Location First Aid",
+        "CPR",
+        "EMT-Intermediate",
+        "Class III River"
+      ],
+      "motto": "Laughing, crying and acting can heal the world one connection at a time! "
+    },
+    {
+      "firstname": "Ricardo",
+      "lastname" : "Mountoyez",
+      "Yrsexperience": 22,
+      "education": "MS, Educational Teaching",
+      "hometown": "Denver, CO",
+      "certifications": [
+        "Wilderness/Remote Location First Aid",
+        "Class III River"
+      ],
+      "motto": "You've got some splaining to do!"
+    }
+  ]
+}
