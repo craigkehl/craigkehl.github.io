@@ -315,6 +315,8 @@ div.guides section div {
   grid-row: 3 / 6;
 }
 
+
+
 div.guides section div span {
   display: block;
   margin: 18px;
@@ -372,6 +374,14 @@ div.trips_page section div {
   border: 8px solid #5ea59b;
   grid-column: 1 / 6;
   grid-row: 2 / 5;
+}
+
+
+div.trips_page section div a {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-weight: 800;
 }
 
 div.trips_page section div span {

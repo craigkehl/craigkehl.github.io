@@ -36,7 +36,7 @@
       </ul>
     </nav>
   </header>
-    <main class="reservations">
+    <main id="page" class="reservations">
       <a href="tel:+1-888-456-7890"><img class="non-sticky2" id="call_icon" src="images/Call.png" alt="call icon"></a>
 
       <h2>Reserve Your Adventure Now</h2>
@@ -52,12 +52,12 @@
             <label class="above">Full Name* <input type="text" name="name" required id="frmName" pattern="[A-Za-z .]{5,}"></label> 
                        
             <!-- Collect their email with an email input type and use a place holder as an example-->
-            <label class="above">Email <input type="email" name="email" id="frmEmail" </label>
+            <label class="above">Email <input type="email" name="email" id="frmEmail"> </label>
             
             
             <label class="above">Phone Number* <input type="tel" name="phone" ></label>
 
-            <label class="above">Zip Code <input type="number" name="zip" required id="frmZip" </label>
+            <label class="above">Zip Code <input type="number" name="zip" required id="frmZip"> </label>
           </fieldset>
         </div>
         <div>
@@ -67,18 +67,14 @@
             <label class="above">Date of trip <input type="date" name="date" id="date"></label>
 
             
-            <label class="above">Name of the trip <input list="trip_list" id="selected_trip" name="selected_trip" >
+            <label class="above">Select your trip <input list="trip_list" id="selected_trip" name="selected_trip"  >
             <datalist id="trip_list">
-              <option value="Take My Breath Away">
-              <option value="Gone for the Day">
-              <option value="Toilette Bowl Twirl">
-              <option value="Crusher Canyon">
-              <option value="Lazy Falls">
+             
             </datalist></label>
 
             
-            <label class="above" for="number">Number of people in your party <span id="number">4</span>
-                <input class="range" type="range" name="number" id="number" value="4" min="1" max="10" step="1" list="number" oninput="countAdjust(this.value)" onchange="countAdjust(this.value)">
+            <label class="above" for="number">Number of people in your party <span id="guest_number">4</span>
+                <input class="range" type="range" name="guest_number" id="guest_number" value="4" min="1" max="10" step="1" list="number" oninput="countAdjust(this.value)" onchange="countAdjust(this.value)">
             </label>
             
             <datalist id="number">
@@ -93,9 +89,10 @@
                 <option value="9">
                 <option value="10">
             </datalist>
+
             
             <!-- List any special requests-->
-            <label class="above" for="comments">List any special requests: 
+            <label class="above" for="comments">List any special requests: <br>
               <textarea class="special_requests" name="comments" id="comments"></textarea>
           </label>
           </fieldset>
@@ -113,5 +110,5 @@
     <script src="js/hamburger_menu.js"></script>
     <script src="js/sticky_nav.js"></script>
     <script src="js/current_weather.js"></script>
-  </body>
+    <script src="js/trips.js"></script>
 </html>
