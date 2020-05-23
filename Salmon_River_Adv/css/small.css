@@ -257,9 +257,6 @@ nav span.data {
   background-color: #f1f8f8;
 }
 
-section.activities div div.description p {
-  padding: 32px 16px;
-}
 
 div.action_call {
   grid-column: 1 / 2;
@@ -268,8 +265,6 @@ div.action_call {
   padding: 16px;
   text-align: center;
   background-color: #5ea59b;
-  
-
 }
 
 /*********************** Footer ********************************/
@@ -305,6 +300,14 @@ div.guides section img {
   z-index: 2;
 }
 
+form div {  
+  background-color: #5ea59b;
+  border: 4px solid #d75e74;
+  box-shadow: 1px 1px 3px #3c3c3b; 
+  max-width: 450px;
+  margin: 16px auto;
+}
+
 div.guides section div {
   margin: 0;
   padding: 25% 10% 5% 10%;
@@ -315,7 +318,9 @@ div.guides section div {
   grid-row: 3 / 6;
 }
 
-
+label.above span {
+  display: inline;
+}
 
 div.guides section div span {
   display: block;
@@ -463,6 +468,12 @@ fieldset {
   margin: 12px;
 }
 
+
+label.inline input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
 form label.above input, form label.above select {
   display: block;
   padding: 5px;
@@ -477,23 +488,6 @@ label.above {
 label.inline {
   padding: 8px 8px 20px 8px;
   margin-bottom: 10px;
-}
-
-label.inline input {
-  padding: 5px;
-  margin-right: 5px;
-}
-
-label.above span {
-  display: inline;
-}
-
-form div {  
-  background-color: #5ea59b;
-  border: 4px solid #d75e74;
-  box-shadow: 1px 1px 3px #3c3c3b; 
-  max-width: 450px;
-  margin: 16px auto;
 }
 
 textarea.special_requests {
@@ -525,6 +519,13 @@ div.contactUs {
   margin: 16px auto;
 }
 
+.contactInfo h6, .contactInfo p, div.electronic ul li {
+  margin-top: 16px;
+  padding-top: 8px;
+  line-height: 1.6;
+  margin-left: 14px;
+}
+
 div.address h6, div.electronic h6 {
   font-size: 18px;
   text-decoration: underline;
@@ -535,11 +536,8 @@ div.address, div.electronic {
   color: #F1f8f8;
 }
 
-.contactInfo h6, .contactInfo p, div.electronic ul li {
-  margin-top: 16px;
-  padding-top: 8px;
-  line-height: 1.6;
-  margin-left: 14px;
+section.activities div div.description p {
+  padding: 32px 16px;
 }
 
 div.map {  
